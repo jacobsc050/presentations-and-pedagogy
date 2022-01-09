@@ -8,5 +8,5 @@
 ### [Latex Output](https://github.com/jacobsc050/presentations-and-pedagogy/blob/main/assets/ODE-Project.pdf)
 
 ## Worksheets for Students
-### [Document](https://github.com/jacobsc050/temperature-controller-arduino/blob/main/arduino-code.ino)
+### [Document](https://github.com/jacobsc050/presentations-and-pedagogy/blob/main/assets/student_work_sheets.pdf)
 
