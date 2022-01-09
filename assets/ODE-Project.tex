@@ -1,0 +1,54 @@
+\documentclass[11pt]{article}
+\usepackage{brauch}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\begin{document}
+\noindent Christopher Jacobs and Edmond Bradly\\
+Professor Lee\\
+Ordinary Differential Equations \\\\
+\title|\textbf {Modeling Bubbles in Solution using Ordinary Differential Equations} 
+\section{Introduction}  \hfill\break
+\indent Archimedes' principle implies that the amount of liquid displaced by a bubble is proportional to the buoyancy force. In solution bubbles will rise to the top to a liquid if they are less dense than the solution, if they are  more dense then they will fall. For example, kids playing with normal bubble solution will see their bubbles fall to the ground, but when looking to quench their thirst they will see bubbles rise in their soda.  These bubbles can be modeled using O.D.E.s to see how they would act as they rise. The goal of modeling a bubble in solution is to see if Archimedes' Principle holds true in reality.  The equations are inspired by Archimedes' equitation: \[ F_B=\rho ghA, \] \\ where $F_B$ = $Force$ $of$ $Buoyancy$,  $\rho$ = $density$ $of$ $bubble$, $g$ = $9.8$ ($m/s^2$), $h$ = $height$ $of$ $bubble$, and $A$ = $Surface$ $Area$ $of$ $the$ $bubble.$ \\\\
+\section{The Model} \hfill\break
+\begin{equation} \label{eq1}
+\begin{split}
+\frac{dA(t)}{dt} & =\epsilon (4.13 \pi A(t)^2)F(t) \\
+\end{split}
+\end{equation} \\
+\indent Equation (1) is the change in the radius of the bubble. The parameter $\epsilon$ is the concentration of gas in the solution, because if there is more gas in solution then as the bubble rises it will collect more gas molecules becoming larger in size. Surface area is of an ellipsoid where two radii are equivalent and one is five percent larger than the first two, which is also what A(t) is squared. The surface area is important because the larger the bubble the more gas molecule it will run into becoming larger. This is also with respect to H(t) because as the bubble rises it can also collect more gas, becoming larger. \\
+\begin{equation} \label{eq2}
+\begin{split}
+\frac{dF(t)}{dt} & =\beta  A(t)^2H(t) \\
+\end{split}
+\end{equation} 
+\indent Equation (2) is the change the force of buoyancy. The parameter $\beta$ is the density of the liquid, because the more dense a liquid the greater the force is will take for a bubble to rise through the liquid. This is because there is more molecules for the bubble to run into, thus impeding its rise in force being applied upward. A(t) is squared because as the bubbles gets larger it increased in a squared way which cause the force of buoyancy to increase in a similar factor. Also, As height increases the force gets larger due to the fact that there is less liquid above the bubble forcing it back down. Also, one assumption being made is that the bubbles form at the bottom of a container because of the aforementioned reason. If the bubbles do not form at the bottom of the container the equation would have to be modified in a clever way to account for this. \\
+\begin{equation} \label{eq3}
+\begin{split}
+\frac{dH(t)}{dt} & =\alpha e^{F(t)}(1- \frac {H(t)}{n}) \\
+\end{split}
+\end{equation}
+\indent Equation (3) is the change in height. The parameter $\alpha$ is the type of gas in the solution because if the gas has a higher molecular weight then the gas would rise slower through the solution because gravity would have a larger magnitude in the downward direction. F(t) is in a exponential because as the force increases the height increases in an exponential way. The limiting term is when H(t) is equivalent to n, which is the height of the container in centimeters, for example, a regular pop bottle is twenty-two centimeters tall; then the change in the height becomes zero. That is when the bubble reaches the top of the bottle it stops increasing in height.   \\
+\section{Assumptions} \hfill\break
+\begin{enumerate}
+  \item When analyzing the system the solution was special to where all parameters equal one, this was a simplification which allowed for a more general analysis instead of one for a specific solution  
+  \item As surface area of the bubble increases the height in the container increases too
+  \item The bubble forms at the bottom of the container 
+  \item The solution is not being disturbs, as this would add forces to the bubble that would not be taken care of 
+  \item There is no ice because the bubble would be stopped by the ice
+  \item The bubbles do not oscillate at the top of the glass 
+\end{enumerate}
+ \hfill\break
+\section{Discussion of Results and Conclusion} \hfill\break
+\indent This model accurately explains what a bubble does in solution, supporting the hypothesis that Archimedes' Principle holds true in reality. First of all, the model allows for the bubble to grow in size as height increases. That is, surface area increases proportionally to height. Some issues with this model is that it only takes into account bubble that form at the bottom of the solution, where as bubble can form in micro-fractures of the container, because the gas can get trapped in the fracture. To reiterate it, this would change how the force of buoyancy would change, so that equation would have to be modified to take this into account. Another factor that can be taken into account is adding ice to the solution and if the solution is being disturbed, because this would account more for reality, as solutions with bubbles are normally served with ice and drank. Again, this model successfully upholds Archimedes' Principle if the bubbles behaves in a way that is "prefect" for the system, but does not quite do the job if the bubbles deviate from the assumptions made. \\
+\section{Appendix} \hfill\break
+\includegraphics[width=10cm, height=10cm]{C:/Users/jacob/OneDrive/Documents/ODE/Picofsolvedeq.PNG} \\
+\indent The above figure is an attempt to directly solve the system. As can be seen the equations are not simple, so analyzing this system would have to be more creative. \\
+\includegraphics[width=10cm, height=10cm]{C:/Users/jacob/OneDrive/Documents/ODE/Radiusvsforce.PNG} \\
+\includegraphics[width=10cm, height=10cm]{C:/Users/jacob/OneDrive/Documents/ODE/HeightvsRadius.PNG} \\
+\includegraphics[width=10cm, height=10cm]{C:/Users/jacob/OneDrive/Documents/ODE/HeightvsForce.PNG} \\
+\indent These above three graphs are phase portraits of the system and how each variable to related to each other. As can be seen Archimedes' Principle is upheld because as the bubble grows larger the higher the bubble becomes.  
+
+
+\end{document}
+
