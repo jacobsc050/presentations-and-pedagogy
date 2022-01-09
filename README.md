@@ -7,8 +7,8 @@ An example of communicating physics, determining the g-factor of electrons using
 ## Modeling Bubbles with Differential Equations
 An example of communicating mathematics, modeling bubbles with differential equations, analyzed with maple. 
 ### [Presentation](https://github.com/jacobsc050/presentations-and-pedagogy/blob/main/assets/Modeling%20Bubbles%20in%20Solution%20With%20ODEs.pdf)
-### [Letex Example](https://github.com/jacobsc050/presentations-and-pedagogy/blob/main/assets/ODE-Project.tex)
-### [Latex Output](https://github.com/jacobsc050/presentations-and-pedagogy/blob/main/assets/ODE-Project.pdf)
+### [Letex example](https://github.com/jacobsc050/presentations-and-pedagogy/blob/main/assets/ODE-Project.tex)
+### [Latex output](https://github.com/jacobsc050/presentations-and-pedagogy/blob/main/assets/ODE-Project.pdf)
 
 
 ## Worksheets for Students
